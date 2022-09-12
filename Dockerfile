@@ -1,5 +1,5 @@
 # Use official python runtime as a parent image
-FROM python:3.9.6-alpine3.13 as dev
+FROM python:3.11.0rc1-bullseye as dev
 FROM dev as runtime
 
 # set work directory to /app
