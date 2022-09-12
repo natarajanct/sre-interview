@@ -36,9 +36,9 @@ make run-web-server
 4. Verify there are 2 docker containers up and running
 ```
 $ docker ps
-CONTAINER ID   IMAGE                COMMAND                  CREATED         STATUS         PORTS                    NAMES
-xxxxxxxxxxxx   kochava_web_server   "/bin/sh -c 'flask r…"   4 minutes ago   Up 4 minutes   0.0.0.0:9001->9001/tcp   kochava_web_server
-yyyyyyyyyyyy   redis                "docker-entrypoint.s…"   4 minutes ago   Up 4 minutes   0.0.0.0:6379->6379/tcp   redis-1
+CONTAINER ID     IMAGE        COMMAND                  CREATED         STATUS         PORTS                    NAMES
+<container_ID>   web_server   "/bin/sh -c 'flask r…"   4 minutes ago   Up 4 minutes   0.0.0.0:9001->9001/tcp   web_server
+<container_ID>   redis        "docker-entrypoint.s…"   4 minutes ago   Up 4 minutes   0.0.0.0:6379->6379/tcp   redis-1
 ```
 
 ## How to use the service
